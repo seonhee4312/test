@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<script>
+
+// function sample(){
+	// console.log('ㅋㅋㅋㅋ');	 	
+ //}
+ 
+ //sample(); //함수를 부르는 호출 
+ 
+ 
+ // a와 b는 더하기 함수의 매개변수(paramster)
+ //function 더하기 (a,b){
+//	 console.log(a+b);	
+ //}
+ 
+ // return 조건을 판단해서 종료하거나 실행을 함 
+ 
+ //값을 얻어내는 것들은 return값을 가지고 있다고 생각하면됨
+ //용도에 따라서 리턴값이 있고 없고 기능이 필요하면 만들게됨  
+ //필요에 의해 리턴을 이용해 어떤 갑을 얻어내느 것 
+ 	
+ 
+// 변수의 유효범위
+// var a= 100; //전역변수 
+ //전부 공유를 하는 공간  
+ 
+ //function sample(){
+	// var b = 200;	//지역변수 함수 안에서 만든 변수는 지역변수
+	 				//함수안에서만 유효하는 변수 
+// }
+ 
+// sample();
+// console.log(b);
+ 
+ //함수 밖에서 선언한 변수는 
+ 
+ 
+ //생성자함수
+  function person (userance,age){
+	 this.username = username;
+	 this.age = age; 
+	 this.introduce= function() {
+		 console.log('안녕나는' + this.username+"야 나이는"+ 
+		 this.age+살이야 );
+	 }
+ }//틀을 만들어냄
+ 
+ //인스터스 instance (생성된 개별객체 하나하나를 가르키는 용어)
+ var p1 = new person ('동네79',20);
+ var p2 = new person ('일분이',3);
+ 
+ p.1 introduce();
+ p.2 introduce();
+ 
+ //각 각다른 특징을  만들어냄 
+ 
+</script>
+</body>
+</html>

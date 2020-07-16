@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<script>
+	var testStr1= "반가워요 홍길동";
+	var res1= testStr1.endswith("홍길동");//ture
+		console.log(res1);
+		console.log(tesrStr1.startsWith("반"));//ture
+		console.log("a".charCodAt(97));
+		console.log(String.fromCharCode(97)); //a
+		console.log(testStr1.includes("요"));//ture
+		console.log(testStr1.indexOf("요"));//3
+		console.log(testStr1.charAt(3));//요
+		console.log(testStr1.lasrIndexOf("요"));//3
+	var teseStr2 = "홍길동 안녕 홍길동 반가워 홍길동 ";
+		//match(regExp)//정규표현식을 사용하여 매칭되는 문자열을 배열
+	var resArr2= testStr2.match("홍길동");
+		console.log(resArr2);
+	var testStr3="hello";
+	console.log(tesrStr3.repeat(5));
+	var testStr4= "안녕 홍길동 반가워 ";
+	//replace(oldString,newString);//바꿘 문자열을 리턴
+		var newdString4=testStr4.replace("홍길동","이순신");
+	console.log(newString4);
+	var testStr5="반가워 홍길동";
+	//search(regExp) indexOf 와 동일 하지만 차이점은 정규 표현식 사용여부 
+	console.log(testStr5.search("홍길동"));
+	consoel.log(testStr5.splice(-1));
+	console.log(testStr5.split(""));
+	var testStr6 ="광주광역시 묵구 임동";
+	console.log(testStes6.substr(3,3))//광역시
+		//substring(startIndex,endIndex)문자열 일부를 추출하여 리턴
+	console.log(testStr6.substring(3,6)); //광역시
+	var tesrStr7="abCdEFg";
+	//toLowerCase()소문자로 모두변경
+console.log(testStr7.toLowerCase())
+//toLowerCase()대문로 모두변경
+console.log(testStr7.toLowerCase())
+//trim()좌우 공백은 제거합니다.
+console.log(testStr7.trim());
+
+		
+		
+</script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<script>
+
+//1. Array 객체
+// length 속성, concate 메서드
+	var a= ['가','나'];
+	var a1=['다','라','마']
+	var newArr = a1.concat(a2)l
+	
+	console.log(newArr); //entries 배열을 엔트리 형태로 반환
+	
+	var entObj= newArr.entries()
+	console.log(entObj)
+	console.log(entObj.next().value)
+	console.log(entObj.next().value)
+	console.log(entObj.next().value)
+	console.log(entObj.next().value)
+	console.log(entObj.next().value)
+	
+		/*
+	for(x of enrObj){
+		console.log(x)
+		}
+		*/
+	
+		//every(cd[,passvall])
+		//요소를 순회하며 체크하고 모두 ture 이여만 리턴한다. 
+		//var cd= function(ele,index,arr){return boolean}
+
+	
+	var testArr1 = [30,60,10,50,40];
+	var return Arr=
+	testArr1.every(function(cv,ix,arr){return 30});
+	console.log(resulArr);
+	
+	//fill(fillValue[,startindex][,endindex])
+	//배열을 fillValue 로 모두 채운다
+	var testArr2= =ㅣ'사과','밤','포도' ,'배','파인애플'];
+	testArr.fill('수박,2,4');
+	consoke.log (testArr2;
+	testArr2.fill(undefindfined);
+	console.log(testArr2);
+	//filter(cd,thisvalue)
+	//배열을 순회하며 조건에 맞는 값들만 새로운 배열로 리턴한다.
+	//thisvalue는 cd 콜백함수 내부에서 this 키워드로 할당 되는 값이다.
+	//cd = function(currentValue[,index,arr])
+	 var testArr3=[30,60,40,50,10,80];
+	var resultArr3=
+		testArr.filter(function(curVal){return curVal >30});
+	console.log(resultArr3);
+	
+	function filterImpl(arr,cd){
+		return cd();
+		
+	}
+		
+	
+	
+	
+	
+	
+</script>
+</body>
+</html>

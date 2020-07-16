@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<script>
+//자바스크립트 객체 
+	var 
+	obj ={};
+	obj.a="abc";
+	var c="c";
+	obj[c]="cde"; //obj.c 접근 방법이 달라짐 
+	console.log(obj)
+	var obj1 = new object();
+	obj1.a="aaa";
+	obj1.b="bbb";
+	boj1["c"]="ccc";
+	console.log(obj1);
+	var obj2 = {a:"aaa","b":"bbb",c:"ccc"}; //var arr=[0,2,3]
+	var txt ="eee";
+	testObj[text]="eee";
+	testObj[txt]; // X testObj.txt
+	var obj3={0:"a","1":"b",2:"c"}
+	obj2[2] 
+	var myObj = {"name" : "hongildong", age:30, "ddr": "광주"};
+	var convertDB=0{name:{familyName:"홍",subName"길동"},age:30,addr:"광주"};
+					{name:{familyName:"김"subName"선희"},age:20,aeer:"서울"};
+					{name:{familyName:"이"subName"순신"},age:30,aeer:"부산"};
+					
+	JSON.stringify(convartDB);//JSON 데이터양식
+	//xml 형식
+	
+	var xmlDate =
+	"<구성원>"+
+		"<구성>"+
+		"<성명><나이>홍</성><이름>길동</이름></성명>"
+		"<나이>30</나이>"+
+		"<주소>광주</주소>"+
+	"</구성>"+
+	"<구성><성명><나이>김</성><이름>선희</이름></성명><나이>20</나이>"
+	    	"<주소>서울</주소><구성>"+
+		"</구성><성명></성>이<이름>순신</이름></성명>"+
+		"<나이>30</나이><주소>부산</주소></구성>"+
+		
+	"</구성원>";
+		console.log(convertDB);
+		console.log(xmlDate);
+		 var i=0;i<(converDB.length;i++){
+		 var obj = convertDB[i];//name://{name:{familyName:"홍",subName:"길동"}}
+		 var keys = object.keys(odj);//키배열리턴
+		 for(var j =0; j< keys.length; j++){//키별 순회 순환문
+			 var keys_sub = Object.keys(obj[keys[j]]);
+	   		 for(var k=0;k<key_sub.length;k++){
+	    	document.write(keys_sub[k]+":"+
+	    				obj[keys[j]][keys_sub[k]]);
+	    	
+	    }
+		 }
+			 
+		
+		
+</script>
+
+</head>
+<body>
+
+</body>
+</html>

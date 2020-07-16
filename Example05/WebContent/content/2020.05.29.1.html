@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<script>
+
+//1.변수
+	var alpa ;//변수를 선언하다
+	alpa=100;// 변수를 초기화 시키다
+	var beta =3000; //변수를 선언과 동시에 초기화 시키다
+	var a,b,c;// a b c 변수를 동시에 선언하다
+	var d = 100, e=200;// 여러변수를 선언과 동시에 초기화 하다.
+	c= 100; //초기화 한것, 변수에 값을 할당 (assign,place)하다.
+	
+//2. 변수의 범위 (sope) 전역변수(global),지역(local)
+	//{    {  }     }      
+	//*바깥쪽 중괄호에 변수를 선언하면 안쪽 중괄호에서 사용 할수 있으며, 
+	//안쪽 중괄호에서 변수를 선언하면 바깥쪽 중괄호에서 사용 할수 없다.
+		// 변수이름이 같다면 가장 가까운쪽 이름의 변수를 사용한다.
+		
+		var y =300;
+	function printZ(){
+		var y=200;
+		console.log("안쪽 y:"+y ); 
+		}
+	printZ();
+	console.log("바깥쪽 y:"+y);
+	//변수의 적용 범위가 다르면 동일한 이름으로 작명 할 수 있다.
+	
+//3.상수
+	//슷자로 입력시 의미가 없으므로 숫자에 의미를 부여하기위함
+	//한번 초기화 하면 변경할수 없으므로 상수라고 함 
+	//var(글로벌) let(지역) const(상수)
+	const APPLE=1;
+	const BANANA=2;
+	const ORANGE=3;
+	
+	console.log(APPLE);
+	console.log(BANANA);
+	console.log(ORANGE);
+	//APPLE=5;
+	var aaa=undefined;
+	//undefined 변수공간의 크기가 결저되지 않음
+	//null 변수 공간의 크기가 결저되어 있을때 	
+	console.log(aaa);
+	console.log(10/0);//Infinfty 출력
+	console.log(0/10);//0
+	console.log(3/"a");
+
+	
+	
+//4.사칙연산 (결석-)
+
+	//사칙연산
+	console.log(3+4);
+	console.log(3+"4"); //34
+	console.log(1%2); //나머지를구해
+	//비교연산
+	console.log(3>4); //false
+	console.log(4>3); //true
+	console.log(true); //true
+	console.log(false); //false
+	console.log(3!=4); //true !는 다르다니까 트루 진실 
+	console.log(3!=3); //false !다르다 같은데 펄스니까 거짓 
+	console.log(3==3); //true
+	//타입검사
+	console.log(3=="3"); //자동변환됨
+	console.log(3==="3"); //타입을 검사함 다르므로 false
+	console.log(typeof "3"); //string
+	console.log(typeof 9); //number
+	console.log(typeof "3" === typeof "5");
+	//인스턴스=객체=개체=row
+	//필드=속성=특성=열=column
+	//and &&, or ||, not !
+	console.log("and, or ,not");
+	console.log(true&&true); //true
+	console.log(false&&false); //false
+	console.log(true||true); //true
+	console.log(true||false); //true
+	console.log(false||false); //false
+	console.log(!true); //false
+	console.log(3>2&&2==2); // true&&true = true
+	console.log(3>2==true&&false);
+	console.log(!false) //true 부정에 부정을 했으니 true
+	//부정문의 연산 
+	
+	//기타 특이한 연산
+	var a=2;
+	a+=2; //a=a+2
+	a-=2; //a=a-2
+	a*=2; //a=a*2
+	a/=2; //a=a/2
+	a%=2; //a=a%2
+	var b=2;
+	console.log(++b); //전 증가
+	var c=2;
+	console.log(c++); //후 증가
+	console.log(c);
+	
+	//상황연산
+	// 조건? 참일때 수행 : 거짓일떄 수행;
+	console.log(3<5? "크다" : "적다");
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

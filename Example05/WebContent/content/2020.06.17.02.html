@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>
+  	function Mycar(colir,size,speed,owner){
+  		this.color=color;
+  		this.size=size;
+  		this.speed=speed;
+  		this.owner=owner;
+  		MyCar.prototype.printMe({
+  			document.write(this.color+"색의"+
+  					this.size +"크기의"+
+  						this.owner+"의 차가 만들어 졌습니다.")
+  				doument.write("<br>")
+  		}
+  	}
+ 			var car1= new MyCar("노랑","주황","0","고양이")
+ 			var car2=new MyCar("검정","중형","0","강아지")
+ 			var car3=new MyCar("빨강","중소형","0","홍길동")
+ 			
+ 			car1.printMe()
+ 			car2.printMe()
+ 			car3.printMe()
+ 			console.log(car1 instanceof MyCar);
+ 			console.log(car1 instanceof MyCar);
+ 			console.log(car1 instanceof Object);
+ 			console.log(2 instanceof Object);
+ 			console.log("안녕"2 instanceof Object);
+ 			console.log(new String("안녕") instanceof Object);
+ 			console.log([3,4,5]instanceof Object);
+ 			console.log([3,4,5]instanceof Array);
+ 			
+ 			
+
+</script>
+
+</head>
+<body>
+
+</body>
+</html>

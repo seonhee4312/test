@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<style>
+	 fieldset{float:left;margin-right:2em}
+ 	button img,fieldset div,#select_com img, #result img
+ {width:50px;height:50px;border:1px solid black}
+ .a{transfrom:scalex(-1)}
+ 
+</style>
+
+</head>
+
+<body>
+ 				<h1>직접 만드는 가위바위보 게임</h1>
+ 				
+ 	<fieldset>
+	<legend>사용자 선택</legend>
+  	<button id="ga" onclick="select_user(this.id)">
+   	<img src="../img/가위.jpg" />
+   	</button>
+   
+   <button id="ba" onclick="select_user(this.id)">
+   <img src="../img/바위.jpg" />
+   </button>
+   
+   <button id="bo" onclick="select_user(this.id)">
+    <img src="../img/보.jpg" />
+   </button>
+   </fieldset>
+  
+  <fieldset>
+  <legend>컴퓨터 선택</legend>
+  <div id="select_com"></div>
+  </fieldset>
+  <hr style="clear:both">
+  <h2>결과:</h2>
+  <div id="result"></div>
+ 
+</body>
+
+<script>
+function select_user(){}//사용자 선책 이미지
+function select_com(){}//컴퓨터 선택이미지
+function result_anal(){} //가위바위보결과 분석
+function print_result(){}//화면에 결과 표기
+
+
+</script>
+
+</body>
+</html>

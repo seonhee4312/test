@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<script>
+//*함수 생성시 고려해야할 사항들
+	//1. 어떤 기능을 만들건지?
+	//2. 기능을 수행하기 위한 재료는 무엇인지?(파라메터)
+	//3. 기능을 수행한 결과로 무엇을 변환할 것인지 
+
+//메소드 생성시 고려해야할 사항
+	//1. 어떤 기능을 만들건지
+	//2.기능을 수행하기 위한 재료는 무엇인지?(파라메터)
+	//3.기능을 수행한 결과로무엇을 반환할것인지?(변화값)
+	//4.객체의 어떤 속성(특징)을 사용할것인지?
+
+//이벤트 코드에서 많이 사용됨 
+getNetwork(function(date){
+	console.log("받은데이터:"+date);
+});
+	function getNetwork(cd){
+		console.log("네트워크에서 데이터를 받아내는 함수");
+		console.log("함수실행종료");
+		cd("네트워크에서 받은 데이터");
+		
+	}
+	//객체 지향적 코드의 캡슐화 기능 구현시
+	function capRun(){
+		var a= 100; //함수 내부의 지역변수 a는 외부에서 접근할수 없다.
+		return function(val){
+			a=val;
+			return a ;
+		}
+	}
+	var f = capRun();
+	console.log(f(100));
+	console.log(f(200));
+	console.log(f(300));
+	
+	
+</script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<script>
+		var chk1= uesrInput.index0f('-');
+		var chk2= uesrInput.index0f('-');
+	
+	if(chek1>=0){
+		//- 일때
+		var tmpArr = userInput.split('-');
+		var k=0;
+		for(var i=tmpArr[0];i=<tmpArr[1];i++){
+				userArr[k]=i;
+				k++;
+			}
+		console.log(userArr)
+	}else if(chk2>=0){
+		//, 일때
+		userArr = userInput.split(",");
+	}else{
+		//단일 숫자 일때
+	userArr[0] = userInput;
+	}
+
+	}else if (userArr.length>0 && che1<=-1){
+			userArr[0]=userinput;
+		}
+		
+		
+		var body=document.getElementsByTagName('body')[0];
+		var inHtml="";
+			for(var i=userArr[0];i=<userArr[1];i++){
+		var subHtml="";
+			for(var j=1;j<=9;j++){
+			subHtml+=i+"*"+j+"="+j+"="+(i*j)+"<br>"
+			}
+			inHtml+=
+				"<div style='float:left;border:1px solid black'>"
+			+subHtml+"</div>";
+			}
+		console.log(inHtml);
+		body.innerHTML=inHtml;
+</script>
+
+</body>
+</html>

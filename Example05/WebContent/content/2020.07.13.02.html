@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>
+console.log("가로해상도 :"+screen.width);
+console.log("세로해상도 :"+screen.height);
+console.log("화소:"+(screen.width*height));
+console.log("태스크제외가로해상도 :"+screen.availWidth);
+console.log("태스크제외세로해상도 :"+screen.availHwidth);
+
+
+</script>
+
+</head>
+<body>
+<button onclick="openCenter()">창 가운데 열기 </button>
+
+</body>
+<script>
+function openCenter(){
+	
+	//window.open(URL, name, specs, replace )
+	let winwidth=200;
+	let winheight=200;
+	let posx= screen.widht/2-window.width/2;
+	let posx= screen.height/2-window.width/2;
+		
+	window.open("http://www.nacver.com","_blank", 
+			width+"winidth+"px, height= winheight+
+			"px, left="+posx+"px, top="+posy+"px");
+	let posy =""
+	
+}
+
+</script>
+
+</html>

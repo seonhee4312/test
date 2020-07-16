@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<script>
+//내장함수 
+	document.write(parseInt("10")+"<br>");    //10진수 10으로 변환
+	document.write(parseInt("010")+"<br>");   //10진수 10으로 변환
+	document.write(parseInt("010",2)+"<br>"); //10진수 2로 변환
+	document.write(parseInt("10",8)+"<br>");  //10진수 8로변환
+	document.write(parseInt("15",16)+"<br>"); //10진수 21로변환
+	document.write(parseInt("0X15")+"<br>");  //10진수 21로 변환
+	console.log(parseInt("kor27")); //NaN타입
+	console.log(3/0); //infinity 타입
+	console.log(isNaN(parseInt("kor27"))); //true
+	console.log(isFinite(3/0));//false
+	
+	document.write(decodeURI("%EC%86%8C%EB%85%80%EC%8B%9C%EB%8C%80"));
+	document.write("<br");
+	document.write(encodeURI("소녀시대"));
+	//isNaN();
+	//isFinite();
+	
+//decodeURIComponent(), / ? 
+	
+</script>
+
+<body>
+
+</body>
+</html>
